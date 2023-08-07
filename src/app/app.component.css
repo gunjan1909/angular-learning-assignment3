@@ -1,0 +1,35 @@
+.blue {
+   background: dodgerblue;
+}
+
+ul {
+   list-style: none;
+   width: fit-content;
+}
+
+li::before {
+   content: "• ";
+   color: black;
+}
+
+/* style the button element like primary bootstrap button */
+button {
+   background-color: #007bff;
+   border-color: #007bff;
+   color: #fff;
+   padding: 0.375rem 0.75rem;
+   border-radius: 0.25rem;
+   font-size: 1rem;
+   line-height: 1.5;
+   border: 1px solid transparent;
+   text-align: center;
+   vertical-align: middle;
+   cursor: pointer;
+   user-select: none;
+   transition: all 0.25s ease-in-out;
+}
+
+button:hover {
+   background-color: #0069d9;
+   border-color: #0062cc;
+}

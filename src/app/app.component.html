@@ -1,2 +1,16 @@
 <h1>Hi</h1>
-<h2>Hihi</h2>
+<h2>{{title}}</h2>
+
+<!-- event binding -->
+<button (click)="buttonClicked()">Display Details</button>
+
+<!-- structural directive to toggle display -->
+<p *ngIf="displayButton">Secret Password = "tuna"</p>
+
+<!-- display the logs array and give white text colour to all list items after 5 -->
+<ul>
+   <li *ngFor="let logItem of logs; let i = index" [ngStyle]="{color: i >= 4 ? 'white' : 'black'}"
+      [ngClass]="{blue: i >= 4}">
+      Clicked {{logItem}} times
+   </li>
+</ul>
