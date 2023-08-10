@@ -1,4 +1,4 @@
-# Angular Assignment3
+# Angular Assignment 3
 
 ### Understanding Directives basics
 
