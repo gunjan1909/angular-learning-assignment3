@@ -13,7 +13,7 @@ li::before {
 }
 
 /* style the button element like primary bootstrap button */
-button {
+.button {
    background-color: #007bff;
    border-color: #007bff;
    color: #fff;
@@ -32,4 +32,11 @@ button {
 button:hover {
    background-color: #0069d9;
    border-color: #0062cc;
+}
+
+pre code {
+   background-color: #eee;
+   border: 1px solid #999;
+   display: block;
+   padding: 20px;
 }

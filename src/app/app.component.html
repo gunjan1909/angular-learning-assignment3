@@ -2,12 +2,17 @@
 <h2>{{title}}</h2>
 
 <!-- event binding -->
-<button (click)="buttonClicked()">Display Details</button>
+<button class="button" (click)="buttonClicked()">Display Details</button>
 
 <!-- structural directive to toggle display -->
-<p *ngIf="displayButton">Secret Password = "tuna"</p>
+<pre *ngIf="displayButton">
+   <code>
+   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem ut amet numquam aliquid totam
+   ullam, saepe velit soluta impedit nihil possimus, autem repellendus tempora rem.
+   </code>
+</pre>
 
-<!-- display the logs array and give white text colour to all list items after 5 -->
+<!-- display the logs array and give white text colour to all list items after 5 using attribute directives -->
 <ul>
    <li *ngFor="let logItem of logs; let i = index" [ngStyle]="{color: i >= 4 ? 'white' : 'black'}"
       [ngClass]="{blue: i >= 4}">
